@@ -1,6 +1,5 @@
 const header = document.querySelector('header');
 const hamburger = document.querySelector('.hamburger');
-const burgerDark = document.querySelector('.burgerDark');
 const burgerExit = document.querySelector('.burger-exit');
 const modalBg = document.querySelector('.modal-bg');
 const headerDisplayNone = $('.header-ul').css('display');
@@ -18,8 +17,6 @@ $('li').on('click', function () {
   $('body, html').animate({
     scrollTop: $(`[data-section = ${sectionName}]`).offset().top + 40
   })
-
-
 });
 
 // Stick nav on desktop
@@ -32,19 +29,11 @@ $(document).on('scroll', function () {
 
   if ((scrollPosition > headerHeight / 2) && (isActive === 0)) {
     $(header).addClass('activeHead');
-    hamburger.style.display = 'none';
-
-    if (headerDisplayNone === 'none') {
-      burgerDark.style.display = 'block';
-    }
-
     isActive = 1;
   }
 
   if (scrollPosition < headerHeight / 2) {
     $(header).removeClass('activeHead');
-    // hamburger.style.display = 'block';
-    burgerDark.style.display = 'none';
     isActive = 0;
   }
 })
@@ -60,7 +49,6 @@ const closeMenu = () => {
   modalBg.style.display = 'none';
 }
 hamburger.addEventListener('click', openMenu);
-burgerDark.addEventListener('click', openMenu);
 burgerExit.addEventListener('click', closeMenu);
 
 // Error when empty input

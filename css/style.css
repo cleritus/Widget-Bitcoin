@@ -247,8 +247,8 @@ header .header-top {
 }
 
 header .header-top .page-logo img {
-  width: 160px;
-  height: 60px;
+  width: 140px;
+  height: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -278,7 +278,7 @@ header .header-top .nav-primary .hamburger {
 }
 
 @media (max-width: 1024px) {
-  header .header-top .nav-primary .burger {
+  header .header-top .nav-primary .hamburger {
     display: block;
   }
 }
@@ -318,7 +318,7 @@ header .header-top .nav-primary .hamburger {
 .activeHead {
   background-image: url("/images/bg/tlo.jpg");
   background-size: cover;
-  height: 70px;
+  height: 60px;
   -webkit-box-shadow: 0 5px 5px 0 rgba(138, 138, 138, 0.1);
           box-shadow: 0 5px 5px 0 rgba(138, 138, 138, 0.1);
 }
@@ -458,14 +458,12 @@ section.features {
 
 section.products {
   position: relative;
-  margin-top: 100px;
   padding: 100px 0;
 }
 
 @media (max-width: 768px) {
   section.products {
-    margin-top: 0;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 }
 
