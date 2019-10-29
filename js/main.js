@@ -5,6 +5,7 @@ const burgerExit = document.querySelector('.burger-exit');
 const modalBg = document.querySelector('.modal-bg');
 const headerDisplayNone = $('.header-ul').css('display');
 
+
 // Nav - Scroll to section
 
 $('li').on('click', function () {
@@ -42,7 +43,7 @@ $(document).on('scroll', function () {
 
   if (scrollPosition < headerHeight / 2) {
     $(header).removeClass('activeHead');
-    hamburger.style.display = 'block';
+    // hamburger.style.display = 'block';
     burgerDark.style.display = 'none';
     isActive = 0;
   }

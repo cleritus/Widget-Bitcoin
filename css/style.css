@@ -4,8 +4,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  color: #7E879F;
+  font-family: 'Poppins', sans-serif;
   cursor: default;
 }
 
@@ -63,41 +62,43 @@ body {
 li {
   text-transform: capitalize;
   list-style: none;
-  font-family: 'brandon-grotesque', 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 26px;
 }
 
+.button-container {
+  height: 95px;
+  width: 276px;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  line-height: 95px;
+  z-index: -1;
+}
+
 button {
-  height: 55px;
-  width: 190px;
-  border: none;
+  height: 75px;
+  width: 256px;
   border-radius: 4px;
-  background: -webkit-gradient(linear, right top, left top, from(#0565FF), to(#0442DF));
-  background: linear-gradient(270deg, #0565FF 0%, #0442DF 100%);
-  -webkit-box-shadow: 0 3px 10px 0 rgba(67, 109, 216, 0.25);
-          box-shadow: 0 3px 10px 0 rgba(67, 109, 216, 0.25);
+  border-style: none;
+  background: #000000;
   color: #ffffff;
-  font-family: "proxima-nova", 'Roboto', sans-serif;
+  font-family: 'Poppins';
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 0.65px;
-  line-height: 16px;
   text-align: center;
   cursor: pointer;
 }
 
 button:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#72A8FF), to(#3165EA));
-  background: linear-gradient(270deg, #72A8FF 0%, #3165EA 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#999), to(#000));
+  background: linear-gradient(270deg, #999 0%, #000 100%);
 }
 
-h1,
 h2,
 h3,
 h4 {
-  color: #436DD8;
-  font-family: "brandon-grotesque", sans-serif;
+  color: orange;
 }
 
 main {
@@ -105,6 +106,7 @@ main {
   background-image: url("../images/bg/tlo.jpg");
   background-position: center;
   background-size: cover;
+  color: #ffffff;
 }
 
 @media (max-width: 1024px) {
@@ -150,9 +152,9 @@ main .banner-area .banner-content {
 }
 
 main .banner-area h1 {
-  font-size: 46px;
-  font-weight: bold;
-  line-height: 60px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 75px;
   margin: 20px 0;
   width: 560px;
 }
@@ -173,7 +175,6 @@ main .banner-area h1 {
 }
 
 main .banner-area p {
-  font-family: "proxima-nova", sans-serif;
   font-size: 18px;
   line-height: 28px;
   margin: 30px 0 40px;
@@ -245,6 +246,11 @@ header .header-top {
   background-color: transparent;
 }
 
+header .header-top .page-logo img {
+  width: 160px;
+  height: 60px;
+}
+
 @media (max-width: 1024px) {
   header .header-top .nav-primary {
     padding: 37px 0;
@@ -310,8 +316,9 @@ header .header-top .nav-primary .hamburger {
 }
 
 .activeHead {
-  background-color: #ffffff;
-  height: 55px;
+  background-image: url("/images/bg/tlo.jpg");
+  background-size: cover;
+  height: 70px;
   -webkit-box-shadow: 0 5px 5px 0 rgba(138, 138, 138, 0.1);
           box-shadow: 0 5px 5px 0 rgba(138, 138, 138, 0.1);
 }
@@ -367,10 +374,6 @@ h2 {
 h2 span {
   font-style: italic;
   font-weight: normal;
-}
-
-p {
-  font-family: "Proxima-Nova", sans-serif;
 }
 
 .bg-transform {
@@ -437,7 +440,6 @@ section.features {
 .s1-content-container .feature-content h4 {
   height: 24px;
   width: 192px;
-  font-family: "Proxima-Nova", sans-serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 24px;
@@ -564,7 +566,6 @@ section.products .article-row .article-content p {
 section.products .article-row .article-content a {
   text-decoration: none;
   color: #436DD8;
-  font-family: 'Proxima-Nova', 'Roboto';
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.47px;
@@ -653,14 +654,12 @@ section.team .s3-content-container .box .img-person {
 
 section.team .s3-content-container .box .person-name {
   color: #436DD8;
-  font-family: "proxima-nova", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 22px;
 }
 
 section.team .s3-content-container .box .person-position {
-  font-family: "proxima-nova", sans-serif;
   font-size: 15px;
   line-height: 30px;
 }
@@ -785,7 +784,6 @@ section.contact .contact-content .form .textarea {
   padding: 18px 0;
   text-indent: 20px;
   color: #7E879F;
-  font-family: "proxima-nova", sans-serif;
   font-size: 14px;
   line-height: 22px;
 }
@@ -888,12 +886,7 @@ footer .footer-top .adress {
           flex-direction: column;
 }
 
-footer .footer-top .adress h4 {
-  font-family: 'Roboto', sans-serif;
-}
-
 footer .footer-top .adress span {
-  font-family: "proxima-nova", sans-serif;
   font-size: 14px;
   line-height: 17px;
   padding-bottom: 17px;
@@ -965,7 +958,6 @@ footer .footer-top .adress-container .media-mobile {
 }
 
 footer p {
-  font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   text-align: center;
   margin: 30px 0;

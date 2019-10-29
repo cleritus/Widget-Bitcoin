@@ -4,6 +4,7 @@ main {
   background-image: url('../images/bg/tlo.jpg');
   background-position: center;
   background-size: cover;
+  color: $white;
 
 
   @media(max-width:1024px) {
@@ -90,9 +91,9 @@ main {
     }
 
     h1 {
-      font-size: 46px;
-      font-weight: bold;
-      line-height: 60px;
+      font-size: 60px;
+      font-weight: 600;
+      line-height: 75px;
       margin: 20px 0;
       width: 560px;
 
