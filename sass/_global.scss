@@ -1,4 +1,5 @@
 //font-family: 'Poppins', sans-serif;
+// color: #FF8C00;
 
 body {
   max-width: 1920px;
@@ -6,7 +7,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  // color: #FF8C00;
+
   cursor: default;
 }
 
@@ -54,19 +55,27 @@ li {
   line-height: 26px;
 }
 
+.button-container {
+  height: 95px;
+  width: 276px;
+  background-color: rgba($color: #fff, $alpha: .4);
+  text-align: center;
+  line-height: 95px;
+  z-index: -1;
+}
+
 button {
-  height: 55px;
-  width: 190px;
-  border: none;
+  height: 75px;
+  width: 256px;
   border-radius: 4px;
-  background: linear-gradient(270deg, #0565FF 0%, #0442DF 100%);
-  box-shadow: 0 3px 10px 0 rgba(67, 109, 216, 0.25);
+  border-style: none;
+  background: $black;
   color: $white;
+  font-family: 'Poppins';
   text-transform: uppercase;
   font-size: 13px;
-  // font-weight: bold;
   letter-spacing: 0.65px;
-  line-height: 16px;
+  // line-height: 16px;
   text-align: center;
   cursor: pointer;
 }
@@ -75,9 +84,8 @@ button:hover {
   background: linear-gradient(270deg, #72A8FF 0%, #3165EA 100%);
 }
 
-h1,
 h2,
 h3,
 h4 {
-  color: $blue;
+  color: orange;
 }
