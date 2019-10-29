@@ -565,12 +565,12 @@ section.products .article-row .article-content p {
 
 section.products .article-row .article-content a {
   text-decoration: none;
-  color: #436DD8;
+  color: #FF8C00;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.47px;
   cursor: pointer;
-  border-bottom: 1px solid #7E879F;
+  border-bottom: 1px solid #FF8C00;
 }
 
 section.products :nth-child(even) {
