@@ -49,16 +49,28 @@ h2 {
 }
 
 
-// SECTION 1 - FEATURES
+// SECTION 2 - FEATURES
 
 section.features {
   padding-top: 100px;
 }
 
-.s1-content-container {
+.bg-s2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // transform: rotate(-5deg);
+  background-color: #F8F9FF;
+  z-index: -1;
+}
+
+.s2-content-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 
   .feature-content {
     display: flex;
@@ -99,7 +111,7 @@ section.features {
   }
 }
 
-// SECTION 2 - PRODUCTS
+// SECTION 1 - PRODUCTS
 
 section.products {
   position: relative;
@@ -109,12 +121,12 @@ section.products {
     padding-bottom: 60px;
   }
 
-
   .article-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 190px 0;
+    // margin: 190px 0;
+    margin: 120px 0 190px 0;
 
     @media(max-width: 1024px) {
       flex-direction: column-reverse;
