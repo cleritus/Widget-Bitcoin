@@ -83,7 +83,12 @@
           <button class="banner-btn">pobierz aplikację</button>
 
           <div class="hero-banner">
-            <img src="./images/asset.gif" alt="banner image">
+            <video loop="loop" id="vid" autoplay="autoplay" style="border-radius: 30%; width:100%;" muted="muted">
+              <source src="images/final.mp4" type="video/mp4">
+            </video>
+            <script>
+              document.getElementById('vid').play();
+            </script>
           </div>
         </div>
       </div>
