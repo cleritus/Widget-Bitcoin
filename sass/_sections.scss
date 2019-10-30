@@ -114,7 +114,7 @@ section.products {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin: 190px 0;
+    margin: 190px 0;
 
     @media(max-width: 1024px) {
       flex-direction: column-reverse;

@@ -489,6 +489,7 @@ section.products .article-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 190px 0;
 }
 
 @media (max-width: 1024px) {
