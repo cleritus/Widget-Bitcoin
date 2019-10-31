@@ -138,12 +138,12 @@ main {
       top: 250px;
       left: 50%;
 
-      img {
-        width: 100%;
+      @media(max-width: 1024px) {
+        top: 54%;
       }
 
       @media(max-width: 1024px) {
-        top: 46%;
+        top: 56%;
       }
 
       @media(max-width: 768px) {

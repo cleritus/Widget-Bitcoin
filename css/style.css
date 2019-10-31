@@ -208,13 +208,15 @@ main .banner-area .hero-banner {
   left: 50%;
 }
 
-main .banner-area .hero-banner img {
-  width: 100%;
+@media (max-width: 1024px) {
+  main .banner-area .hero-banner {
+    top: 54%;
+  }
 }
 
 @media (max-width: 1024px) {
   main .banner-area .hero-banner {
-    top: 46%;
+    top: 56%;
   }
 }
 
