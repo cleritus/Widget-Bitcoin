@@ -4,19 +4,26 @@ const burgerExit = document.querySelector('.burger-exit');
 const modalBg = document.querySelector('.modal-bg');
 const headerDisplayNone = $('.header-ul').css('display');
 
-
 // Nav - Scroll to section
+
+let sectionActive = '';
 
 $('li').on('click', function () {
   const sectionName = $(this).attr('class');
-  modalBg.style.display = 'none';
-  $(header).removeClass('activeHead');
-  header.classList.remove('hideHead');
 
+  if (sectionActive === sectionName) {
+    return console.log('You are in the section you click')
+  } else {
+    modalBg.style.display = 'none';
+    $(header).removeClass('activeHead');
+    header.classList.remove('hideHead');
 
-  $('body, html').animate({
-    scrollTop: $(`[data-section = ${sectionName}]`).offset().top
-  })
+    $('body, html').animate({
+      scrollTop: $(`[data-section = ${sectionName}]`).offset().top
+    })
+
+    sectionActive = sectionName;
+  }
 });
 
 // Stick nav on desktop
@@ -25,7 +32,7 @@ $(document).on('scroll', function () {
   const scrollPosition = $(this).scrollTop();
   const headerHeight = $(header).outerHeight();
   let isActive = 0;
-  const headerDisplayNone = $('.header-ul').css('display');
+  // const headerDisplayNone = $('.header-ul').css('display');
 
   if ((scrollPosition > headerHeight / 2) && (isActive === 0)) {
     $(header).addClass('activeHead');
